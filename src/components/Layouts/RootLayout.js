@@ -102,7 +102,11 @@
 import { Layout, Menu, theme } from "antd";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import { ProfileOutlined, MobileOutlined, UserOutlined } from "@ant-design/icons";
+import {
+  ProfileOutlined,
+  MobileOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
 const { Header, Content, Footer } = Layout;
 
 const RootLayout = ({ children }) => {
@@ -124,7 +128,7 @@ const RootLayout = ({ children }) => {
         <div className="demo-logo" />
         <Menu theme="dark" mode="horizontal" className={styles.menu_items}>
           <Menu.Item key="1" icon={<ProfileOutlined />}>
-            <Link href="/">Desktop</Link>
+            <Link href="/">Home</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<UserOutlined />}>
             <Link href="/">Laptop</Link>
@@ -167,7 +171,7 @@ const RootLayout = ({ children }) => {
           style={{
             marginTop: 20,
             padding: 24,
-            height: "100vh",
+            height: "100%",
             // minHeight: 580,
             background: colorBgContainer,
           }}
