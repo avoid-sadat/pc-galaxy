@@ -129,12 +129,27 @@ const RootLayout = ({ children }) => {
           <Menu.Item key="2" icon={<UserOutlined />}>
             <Link href="/">Laptop</Link>
           </Menu.Item>
-          <Menu.SubMenu key="3" icon={<MobileOutlined />} title="Components">
+          <Menu.SubMenu key="3" icon={<MobileOutlined />} title="COMPONENTS">
             <Menu.Item key="3.1">
-              <Link href="/">Option 1</Link>
+              <Link href="/">CPU/Processor</Link>
             </Menu.Item>
             <Menu.Item key="3.2">
-              <Link href="/">Option 2</Link>
+              <Link href="/">Motherboard</Link>
+            </Menu.Item>
+            <Menu.Item key="3.3">
+              <Link href="/">RAM</Link>
+            </Menu.Item>
+            <Menu.Item key="3.4">
+              <Link href="/">Power Supply Unit</Link>
+            </Menu.Item>
+            <Menu.Item key="3.5">
+              <Link href="/">Storage Device</Link>
+            </Menu.Item>
+            <Menu.Item key="3.6">
+              <Link href="/">Monitor</Link>
+            </Menu.Item>
+            <Menu.Item key="3.7">
+              <Link href="/">Others</Link>
             </Menu.Item>
           </Menu.SubMenu>
           <Menu.Item key="4" icon={<MobileOutlined />}>
