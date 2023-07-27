@@ -131,29 +131,29 @@ const RootLayout = ({ children }) => {
           </Menu.Item>
           <Menu.SubMenu key="3" icon={<MobileOutlined />} title="COMPONENTS">
             <Menu.Item key="3.1">
-              <Link href="/">CPU/Processor</Link>
+              <Link href="/cpu">CPU/Processor</Link>
             </Menu.Item>
             <Menu.Item key="3.2">
-              <Link href="/">Motherboard</Link>
+              <Link href="/motherboard">Motherboard</Link>
             </Menu.Item>
             <Menu.Item key="3.3">
-              <Link href="/">RAM</Link>
+              <Link href="/ram">RAM</Link>
             </Menu.Item>
             <Menu.Item key="3.4">
-              <Link href="/">Power Supply Unit</Link>
+              <Link href="/power">Power Supply Unit</Link>
             </Menu.Item>
             <Menu.Item key="3.5">
-              <Link href="/">Storage Device</Link>
+              <Link href="/storage">Storage Device</Link>
             </Menu.Item>
             <Menu.Item key="3.6">
-              <Link href="/">Monitor</Link>
+              <Link href="/monitor">Monitor</Link>
             </Menu.Item>
             <Menu.Item key="3.7">
-              <Link href="/">Others</Link>
+              <Link href="/others">Others</Link>
             </Menu.Item>
           </Menu.SubMenu>
           <Menu.Item key="4" icon={<MobileOutlined />}>
-            <Link href="/">PC Builder</Link>
+            <Link href="/pcBuilder">PC Builder</Link>
           </Menu.Item>
         </Menu>
       </Header>
