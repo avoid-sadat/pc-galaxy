@@ -105,7 +105,6 @@ import Link from "next/link";
 import {
   ProfileOutlined,
   MobileOutlined,
-  UserOutlined,
 } from "@ant-design/icons";
 const { Header, Content, Footer } = Layout;
 
@@ -127,28 +126,32 @@ const RootLayout = ({ children }) => {
       >
         <div className="demo-logo" />
         <Menu theme="dark" mode="horizontal" className={styles.menu_items}>
-          <Menu.Item key="1" icon={<ProfileOutlined />}>
-            <Link href="/">Home</Link>
-          </Menu.Item>
+            <Link href="/">
+              <items>
+                <ProfileOutlined/>
+                Home
+              </items>
+              </Link>
+          
           <Menu.SubMenu key="3" icon={<MobileOutlined />} title="CATEGORY">
-            <Menu.Item key="3.1">
+          <Menu.Item key="3.7">
               <Link href="/cpu">CPU/Processor</Link>
-            </Menu.Item>
-            <Menu.Item key="3.2">
+              </Menu.Item>
+              <Menu.Item key="3.7">
               <Link href="/motherboard">Motherboard</Link>
-            </Menu.Item>
-            <Menu.Item key="3.3">
+              </Menu.Item>
+              <Menu.Item key="3.7">
               <Link href="/ram">RAM</Link>
-            </Menu.Item>
-            <Menu.Item key="3.4">
+              </Menu.Item>
+              <Menu.Item key="3.7">
               <Link href="/power">Power Supply Unit</Link>
-            </Menu.Item>
-            <Menu.Item key="3.5">
+              </Menu.Item>
+              <Menu.Item key="3.7">
               <Link href="/storage">Storage Device</Link>
-            </Menu.Item>
-            <Menu.Item key="3.6">
+              </Menu.Item>
+              <Menu.Item key="3.7">
               <Link href="/monitor">Monitor</Link>
-            </Menu.Item>
+              </Menu.Item>
             <Menu.Item key="3.7">
               <Link href="/others">Others</Link>
             </Menu.Item>

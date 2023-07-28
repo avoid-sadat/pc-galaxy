@@ -114,20 +114,6 @@ const Banner = () => (
             blinked that iguanodon bid much some since hey far goodness jaguar
             whil...
           </p>
-          <p
-            style={{
-              fontSize: "20px",
-              margin: "20px 0px",
-              backgroundColor: "black",
-              color: "white",
-              width: "168px",
-              padding: "2px 5px ",
-              fontWeight: "300",
-              letterSpacing: "3px",
-            }}
-          >
-            Keep Reading <ArrowRightOutlined />
-          </p>
         </Col>
 
         <Col
@@ -188,20 +174,7 @@ const Banner = () => (
             python owing snapped yikes equitable when much the much Lorem ipsum
             dolor sit, amet consectetur adipisicing elit. Eligendi, tenetur!...
           </p>
-          <p
-            style={{
-              fontSize: "20px",
-              margin: "20px 0px",
-              backgroundColor: "black",
-              color: "white",
-              width: "168px",
-              padding: "2px 5px ",
-              fontWeight: "300",
-              letterSpacing: "3px",
-            }}
-          >
-            Keep Reading <ArrowRightOutlined />
-          </p>
+         
         </Col>
 
         <Col

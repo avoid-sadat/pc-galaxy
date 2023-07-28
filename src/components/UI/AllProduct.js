@@ -29,7 +29,7 @@ const AllProduct = ({ allProduct }) => {
     // Set up auto-refresh to get new random products every 30 seconds (adjust the interval as needed)
     const interval = setInterval(() => {
       getRandomProducts();
-    }, 30000);
+    }, 5000);
 
     // Clean up the interval to avoid memory leaks when the component is unmounted
     return () => {
@@ -132,7 +132,6 @@ const AllProduct = ({ allProduct }) => {
           </Col>
         ))}
       </Row>
-     
     </>
   );
 };
