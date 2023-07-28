@@ -28,7 +28,7 @@ const buildPc = ({ allCategory }) => {
               </div>
               <Button>
                 {/* Dynamic Link based on category name */}
-                <Link href={`/${category.category.toLowerCase()}`}>
+                <Link href={`/categories/${category.category}`}>
                   ADD
                 </Link>
               </Button>
@@ -46,7 +46,7 @@ buildPc.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export const getStaticProps = async function getStaticProps() {
+export const getServerSideProps = async function getServerSideProps() {
   const res = await fetch("http://localhost:5000/products");
   const data = await res.json();
 
