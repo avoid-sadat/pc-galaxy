@@ -1,13 +1,17 @@
 import RootLayout from "@/components/Layouts/RootLayout";
-import { Card, Row, Col } from "antd";
+import { Card, Row, Col, Button,Rate } from "antd";
 import Image from "next/image";
 import { useEffect } from "react";
-import { CalendarOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined,
+    CalendarOutlined,
+    CommentOutlined,
+    ProfileOutlined, } from "@ant-design/icons";
 import { useRouter } from "next/router";
 
 const Category = ({ allCategory }) => {
   const router = useRouter();
   const { category } = router.query;
+  const checkStatus = "Out of Stock"
 
   useEffect(() => {
     console.log("Received data:", allCategory);
@@ -20,7 +24,8 @@ const Category = ({ allCategory }) => {
   return (
     <>
       <h1 style={{ textAlign: "center", fontSize: "50px", margin: "30px 0px" }}>
-        #TODAY HIGHLIGHT
+        #TODAY HIGHLIGHT 
+        <p>{category}</p>
       </h1>
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
         {filteredProducts.map((product) => (
@@ -48,9 +53,33 @@ const Category = ({ allCategory }) => {
               <div>
                 <span>
                   <CalendarOutlined />
-                  {product.price} Price
+                  Price: {product.price} 
                 </span>
               </div>
+              <div>
+
+              <span>
+                    <CommentOutlined />
+                    Status: {product?.status}
+                  </span>
+              </div>
+              <div>
+              <span>
+                    <CalendarOutlined />
+                    Category: {product?.category}
+                  </span>
+              </div>
+              <div>
+              <span>
+              <Rate allowClear={false} defaultValue={product?.rating} style={{color:"orange"}} />
+                  </span>
+              </div>
+              {product?.status === checkStatus ? (
+                <Button disabled>Add To Build</Button>
+              ) : (
+                <Button type="primary">ADD To Build</Button>
+                
+              )}
             </Card>
           </Col>
         ))}
