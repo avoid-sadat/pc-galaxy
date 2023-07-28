@@ -130,10 +130,7 @@ const RootLayout = ({ children }) => {
           <Menu.Item key="1" icon={<ProfileOutlined />}>
             <Link href="/">Home</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<UserOutlined />}>
-            <Link href="/">Laptop</Link>
-          </Menu.Item>
-          <Menu.SubMenu key="3" icon={<MobileOutlined />} title="COMPONENTS">
+          <Menu.SubMenu key="3" icon={<MobileOutlined />} title="CATEGORY">
             <Menu.Item key="3.1">
               <Link href="/cpu">CPU/Processor</Link>
             </Menu.Item>

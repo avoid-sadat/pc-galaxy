@@ -25,7 +25,17 @@ const AllProduct = ({allProduct}) => {
   useEffect(() => {
     // Call the function to get 6 random products on component mount
     getRandomProducts();
-  }, []);
+
+    // Set up auto-refresh to get new random products every 30 seconds (adjust the interval as needed)
+    const interval = setInterval(() => {
+      getRandomProducts();
+    }, 30000);
+
+    // Clean up the interval to avoid memory leaks when the component is unmounted
+    return () => {
+      clearInterval(interval);
+    };
+  }, [allProduct]);
 
     return (
         <>
@@ -121,7 +131,7 @@ const AllProduct = ({allProduct}) => {
                   width: "100%",
                 }}
               >
-                Continue Reading <ArrowRightOutlined />
+                Product Details <ArrowRightOutlined />
               </p>
         </Link>
             </Card>
