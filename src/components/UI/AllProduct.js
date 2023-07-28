@@ -65,12 +65,7 @@ const AllProduct = ({allProduct}) => {
             md={8}
             lg={6}
           >
-            {/* 
-            Adjust the column span (xs, sm, md, lg) based on your design requirements.
-            Here, I've set it to span the full width on extra-small (xs) screens,
-            half width on small (sm) screens, 1/3 width on medium (md) screens,
-            and 1/4 width on large (lg) screens.
-          */}
+
             <Card
               hoverable
               cover={
