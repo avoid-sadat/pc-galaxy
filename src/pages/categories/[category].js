@@ -1,17 +1,20 @@
 import RootLayout from "@/components/Layouts/RootLayout";
-import { Card, Row, Col, Button,Rate } from "antd";
+import { Card, Row, Col, Button, Rate } from "antd";
 import Image from "next/image";
 import { useEffect } from "react";
-import { ArrowRightOutlined,
-    CalendarOutlined,
-    CommentOutlined,
-    ProfileOutlined, } from "@ant-design/icons";
+import {
+  CalendarOutlined,
+  CommentOutlined,
+} from "@ant-design/icons";
 import { useRouter } from "next/router";
+import { useAppContext } from "@/AppContext";
 
 const Category = ({ allCategory }) => {
   const router = useRouter();
   const { category } = router.query;
-  const checkStatus = "Out of Stock"
+  const checkStatus = "Out of Stock";
+
+  const {state,dispatch} = useAppContext()
 
   useEffect(() => {
     console.log("Received data:", allCategory);
@@ -21,10 +24,19 @@ const Category = ({ allCategory }) => {
     (product) => product.category === category
   );
 
+  
+
+  const handleAddToBuild = (product) => {
+    // Dispatch an action to add the selected component to the state
+    dispatch({ type: "ADD_COMPONENT", payload: product });
+
+    router.push("/pcBuilder");
+  };
+
   return (
     <>
       <h1 style={{ textAlign: "center", fontSize: "50px", margin: "30px 0px" }}>
-        #TODAY HIGHLIGHT 
+        #TODAY HIGHLIGHT
         <p>{category}</p>
       </h1>
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
@@ -53,32 +65,34 @@ const Category = ({ allCategory }) => {
               <div>
                 <span>
                   <CalendarOutlined />
-                  Price: {product.price} 
+                  Price: {product.price}
                 </span>
               </div>
               <div>
-
-              <span>
-                    <CommentOutlined />
-                    Status: {product?.status}
-                  </span>
+                <span>
+                  <CommentOutlined />
+                  Status: {product?.status}
+                </span>
               </div>
               <div>
-              <span>
-                    <CalendarOutlined />
-                    Category: {product?.category}
-                  </span>
+                <span>
+                  <CalendarOutlined />
+                  Category: {product?.category}
+                </span>
               </div>
               <div>
-              <span>
-              <Rate allowClear={false} defaultValue={product?.rating} style={{color:"orange"}} />
-                  </span>
+                <span>
+                  <Rate
+                    allowClear={false}
+                    defaultValue={product?.rating}
+                    style={{ color: "orange" }}
+                  />
+                </span>
               </div>
               {product?.status === checkStatus ? (
                 <Button disabled>Add To Build</Button>
               ) : (
-                <Button type="primary">ADD To Build</Button>
-                
+                <Button type="primary" onClick={() => handleAddToBuild(product)}>ADD To Builder</Button>
               )}
             </Card>
           </Col>
@@ -95,8 +109,6 @@ Category.getLayout = function getLayout(page) {
 };
 
 export const getServerSideProps = async function getServerSideProps() {
-
-
   // Fetch data from the API based on the category parameter
   const res = await fetch(`http://localhost:5000/products`);
   const data = await res.json();
