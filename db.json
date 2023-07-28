@@ -4,7 +4,7 @@
         "id": 1,
         "image": "/images/pic1.jpg",
         "productName": "CPU Processor XYZ",
-        "category": "CPU / Processor",
+        "category": "CPU",
         "price": 199.99,
         "status": "In Stock",
         "rating": 4.5
@@ -31,7 +31,7 @@
         "id": 4,
         "image": "/images/pic4.jpg",
         "productName": "Power Supply 750W",
-        "category": "Power Supply Unit",
+        "category": "Power",
         "price": 109.99,
         "status": "In Stock",
         "rating": 4.8
@@ -40,7 +40,7 @@
         "id": 5,
         "image": "/images/pic5.jpg",
         "productName": "SSD 1TB",
-        "category": "Storage Device",
+        "category": "Storage",
         "price": 149.99,
         "status": "In Stock",
         "rating": 4.6
@@ -103,7 +103,7 @@
         "id": 12,
         "image": "/images/pic12.jpg",
         "productName": "External HDD 2TB",
-        "category": "Storage Device",
+        "category": "Storage",
         "price": 89.99,
         "status": "In Stock",
         "rating": 4.2
@@ -121,7 +121,7 @@
         "id": 14,
         "image": "/images/pic14.jpg",
         "productName": "CPU Cooler XYZ",
-        "category": "CPU / Processor",
+        "category": "CPU",
         "price": 79.99,
         "status": "In Stock",
         "rating": 4.4
@@ -157,7 +157,7 @@
         "id": 18,
         "image": "/images/pic18.jpg",
         "productName": "CPU Processor ABC",
-        "category": "CPU / Processor",
+        "category": "CPU",
         "price": 179.99,
         "status": "In Stock",
         "rating": 4.2
@@ -193,7 +193,7 @@
         "id": 22,
         "image": "/images/pic22.jpg",
         "productName": "Wireless Headphones XYZ",
-        "category": "Others",
+        "category": "RAM",
         "price": 129.99,
         "status": "In Stock",
         "rating": 4.3
@@ -202,7 +202,7 @@
         "id": 23,
         "image": "/images/pic23.jpg",
         "productName": "Gaming Keyboard XYZ",
-        "category": "Others",
+        "category": "RAM",
         "price": 89.99,
         "status": "In Stock",
         "rating": 4.8
@@ -220,7 +220,7 @@
         "id": 25,
         "image": "/images/pic25.jpg",
         "productName": "HD Webcam",
-        "category": "Others",
+        "category": "Power",
         "price": 49.99,
         "status": "Out of Stock",
         "rating": 3.9
@@ -229,7 +229,7 @@
         "id": 26,
         "image": "/images/pic26.jpg",
         "productName": "Inkjet Printer ABC",
-        "category": "Others",
+        "category": "Power",
         "price": 79.99,
         "status": "In Stock",
         "rating": 4.2
@@ -238,7 +238,7 @@
         "id": 27,
         "image": "/images/pic27.jpg",
         "productName": "SSD 500GB",
-        "category": "Storage Device",
+        "category": "Storage",
         "price": 99.99,
         "status": "In Stock",
         "rating": 4.6
@@ -247,7 +247,7 @@
         "id": 28,
         "image": "/images/pic28.jpg",
         "productName": "Wireless Keyboard and Mouse Set",
-        "category": "Others",
+        "category": "Motherboard",
         "price": 59.99,
         "status": "In Stock",
         "rating": 4.0
@@ -256,7 +256,7 @@
         "id": 29,
         "image": "/images/pic29.jpg",
         "productName": "Gaming Mouse ABC",
-        "category": "Others",
+        "category": "Motherboard",
         "price": 59.99,
         "status": "Out of Stock",
         "rating": 4.3
@@ -265,7 +265,7 @@
         "id": 30,
         "image": "/images/pic30.jpg",
         "productName": "Wireless Router XYZ",
-        "category": "Others",
+        "category": "Monitor",
         "price": 79.99,
         "status": "In Stock",
         "rating": 4.7

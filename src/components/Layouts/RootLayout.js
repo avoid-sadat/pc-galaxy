@@ -99,7 +99,7 @@
 
 // export default RootLayout;
 
-import { Layout, Menu, theme } from "antd";
+import { Button, Layout, Menu, theme } from "antd";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import {
@@ -168,8 +168,8 @@ const RootLayout = ({ children }) => {
           style={{
             marginTop: 20,
             padding: 24,
-            height: "100%",
-            // minHeight: 580,
+
+            minHeight: "100vh",
             background: colorBgContainer,
           }}
         >

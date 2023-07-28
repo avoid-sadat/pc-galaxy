@@ -11,7 +11,7 @@ import {
 
 const power = ({allProduct}) => {
     const {Meta} = Card
-    const category = "Power Supply Unit";
+    const category = "Power";
 
     // Filter products based on the category
     const filteredProducts = allProduct.filter((product) => product.category === category);

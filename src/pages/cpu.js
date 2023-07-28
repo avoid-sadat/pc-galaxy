@@ -11,7 +11,7 @@ import {
 
 const cpu = ({allProduct}) => {
     const {Meta} = Card
-    const category = "CPU / Processor";
+    const category = "CPU";
 
     // Filter products based on the category
     const filteredProducts = allProduct.filter((product) => product.category === category);
