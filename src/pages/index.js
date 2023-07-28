@@ -2,6 +2,7 @@ import Head from "next/head";
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Banner";
 import AllProduct from "@/components/UI/AllProduct";
+import FeaturedCategory from "@/components/UI/FeaturedCategory";
 
 const HomePage = ({allProduct}) => {
   return (
@@ -17,6 +18,7 @@ const HomePage = ({allProduct}) => {
       </Head>
       <Banner />
       <AllProduct allProduct={allProduct}></AllProduct>
+      <FeaturedCategory allProduct={allProduct}></FeaturedCategory>
     </>
   );
 };

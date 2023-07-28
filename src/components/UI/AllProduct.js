@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import {
-    ArrowRightOutlined,
-    CalendarOutlined,
-    CommentOutlined,
-    ProfileOutlined,
-  } from "@ant-design/icons";
-  import { Card, Row, Col } from "antd";
-  import Image from "next/image";
-  import Link from "next/link";
+  ArrowRightOutlined,
+  CalendarOutlined,
+  CommentOutlined,
+  ProfileOutlined,
+} from "@ant-design/icons";
+import { Card, Row, Col, Button, Space } from "antd";
+import Image from "next/image";
+import Link from "next/link";
 
-const AllProduct = ({allProduct}) => {
-    const {Meta} = Card
+const AllProduct = ({ allProduct }) => {
+  const { Meta } = Card;
 
-     // State to store the randomly selected 6 products
+  // State to store the randomly selected 6 products
   const [randomProducts, setRandomProducts] = useState([]);
 
   // Function to get 6 random products from the allProduct array
@@ -37,8 +37,8 @@ const AllProduct = ({allProduct}) => {
     };
   }, [allProduct]);
 
-    return (
-        <>
+  return (
+    <>
       <h1
         style={{
           textAlign: "center",
@@ -65,7 +65,6 @@ const AllProduct = ({allProduct}) => {
             md={8}
             lg={6}
           >
-
             <Card
               hoverable
               cover={
@@ -115,26 +114,27 @@ const AllProduct = ({allProduct}) => {
                   {products?.rating} Rating
                 </span>
               </p>
-        <Link href={`/products/${products?.id}`}>
-        <p
-                style={{
-                  textAlign: "center",
-                  fontSize: "15px",
-                  marginTop: "20px",
-                  backgroundColor: "black",
-                  color: "white",
-                  width: "100%",
-                }}
-              >
-                Product Details <ArrowRightOutlined />
-              </p>
-        </Link>
+              <Link href={`/products/${products?.id}`}>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontSize: "15px",
+                    marginTop: "20px",
+                    backgroundColor: "black",
+                    color: "white",
+                    width: "100%",
+                  }}
+                >
+                  Product Details <ArrowRightOutlined />
+                </p>
+              </Link>
             </Card>
           </Col>
         ))}
       </Row>
+     
     </>
-    );
+  );
 };
 
 export default AllProduct;

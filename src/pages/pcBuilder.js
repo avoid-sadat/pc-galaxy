@@ -12,7 +12,6 @@
 //   const { selectedComponents } = state;
 
 //   const isCompleteBuild = selectedComponents.length >= 5;
-  
 
 //   return (
 //     <><>
@@ -105,7 +104,7 @@
 //       <button disabled={!isCompleteBuild}>Complete Build
 //       window.alert("Build completed successfully!");
 //       </button>
-      
+
 //       <List
 //         dataSource={sixCategories}
 //         renderItem={(category) => (
@@ -149,7 +148,7 @@
 import React from "react";
 import RootLayout from "@/components/Layouts/RootLayout";
 import Head from "next/head";
-import { Button, Card, List } from "antd";
+import { Alert, Button, Card, List } from "antd";
 import Link from "next/link";
 import { useAppContext } from "@/AppContext";
 
@@ -196,6 +195,7 @@ const buildPc = ({ allCategory }) => {
           <List.Item>
             <Card>
               <div>{category.category}</div>
+
               <Button>
                 {/* Dynamic Link based on category name */}
                 <Link href={`/categories/${category.category}`}>ADD</Link>
