@@ -102,13 +102,13 @@
 import { Button, Layout, Menu, theme } from "antd";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import {
-  ProfileOutlined,
-  MobileOutlined,
-} from "@ant-design/icons";
+import { ProfileOutlined, MobileOutlined } from "@ant-design/icons";
+import { useSession, signOut } from "next-auth/react";
 const { Header, Content, Footer } = Layout;
 
 const RootLayout = ({ children }) => {
+  const { data: session } = useSession();
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -126,32 +126,32 @@ const RootLayout = ({ children }) => {
       >
         <div className="demo-logo" />
         <Menu theme="dark" mode="horizontal" className={styles.menu_items}>
-            <Link href="/">
-              <items>
-                <ProfileOutlined/>
-                Home
-              </items>
-              </Link>
-          
+          <Link href="/">
+            <items>
+              <ProfileOutlined />
+              Home
+            </items>
+          </Link>
+
           <Menu.SubMenu key="3" icon={<MobileOutlined />} title="CATEGORY">
-          <Menu.Item key="3.7">
+            <Menu.Item key="3.7">
               <Link href="/cpu">CPU/Processor</Link>
-              </Menu.Item>
-              <Menu.Item key="3.7">
+            </Menu.Item>
+            <Menu.Item key="3.7">
               <Link href="/motherboard">Motherboard</Link>
-              </Menu.Item>
-              <Menu.Item key="3.7">
+            </Menu.Item>
+            <Menu.Item key="3.7">
               <Link href="/ram">RAM</Link>
-              </Menu.Item>
-              <Menu.Item key="3.7">
+            </Menu.Item>
+            <Menu.Item key="3.7">
               <Link href="/power">Power Supply Unit</Link>
-              </Menu.Item>
-              <Menu.Item key="3.7">
+            </Menu.Item>
+            <Menu.Item key="3.7">
               <Link href="/storage">Storage Device</Link>
-              </Menu.Item>
-              <Menu.Item key="3.7">
+            </Menu.Item>
+            <Menu.Item key="3.7">
               <Link href="/monitor">Monitor</Link>
-              </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="3.7">
               <Link href="/others">Others</Link>
             </Menu.Item>
@@ -159,6 +159,34 @@ const RootLayout = ({ children }) => {
           <Menu.Item key="4" icon={<MobileOutlined />}>
             <Link href="/pcBuilder">PC Builder</Link>
           </Menu.Item>
+
+          {session?.user ? (
+            <Menu.Item key="4">
+              <span
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                }}
+              >
+                {session?.user?.name}
+              </span>
+
+              <Button onClick={() => signOut()} type="primary" danger  style={{
+                 marginLeft:"10px"
+                }}>
+                Logout
+              </Button>
+            </Menu.Item>
+          ) : (
+            <Menu.Item key="4">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                href="/login"
+              >
+                Login
+              </Link>
+            </Menu.Item>
+          )}
         </Menu>
       </Header>
       <Content
