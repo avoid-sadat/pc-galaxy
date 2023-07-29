@@ -1,275 +1,1149 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "image": "/images/pic1.jpg",
-        "productName": "CPU Processor XYZ",
-        "category": "CPU",
-        "price": 199.99,
-        "status": "In Stock",
-        "rating": 4.5
+  "products": [
+    {
+      "id": 1,
+      "image": "/images/pic1.jpg",
+      "productName": "CPU Processor XYZ",
+      "category": "CPU",
+      "price": 199.99,
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "This is an amazing electronic device with advanced features.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "XYZ-123",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Port": "USB 3.0, HDMI, Ethernet",
+        "Type": "Electronics",
+        "Resolution": "1920x1080",
+        "Voltage": "110-240V"
       },
-      {
-        "id": 2,
-        "image": "/images/pic2.jpg",
-        "productName": "Motherboard ABC",
-        "category": "Motherboard",
-        "price": 149.99,
-        "status": "In Stock",
-        "rating": 4.2
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 3,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 3,
-        "image": "/images/pic3.jpg",
-        "productName": "RAM Module 8GB",
-        "category": "RAM",
-        "price": 79.99,
-        "status": "Out of Stock",
-        "rating": 4.0
+      "averageRating": 4.2,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Great product, but could use more accessories."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Absolutely love it! Best purchase ever!"
+        },
+        {
+          "user": "User3",
+          "rating": 3,
+          "comment": "Decent, but not as expected."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Good performance and value for money."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Excellent build quality and features."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/images/pic2.jpg",
+      "productName": "Motherboard ABC",
+      "category": "Motherboard",
+      "price": 149.99,
+      "status": "In Stock",
+      "rating": 4.2,
+      "description": "High-performance motherboard for gaming and multitasking.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "ABC-456",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Port": "USB 3.1, HDMI, PCIe",
+        "Type": "Electronics",
+        "FormFactor": "ATX",
+        "RAMSlots": "4 DDR4 slots"
       },
-      {
-        "id": 4,
-        "image": "/images/pic4.jpg",
-        "productName": "Power Supply 750W",
-        "category": "Power",
-        "price": 109.99,
-        "status": "In Stock",
-        "rating": 4.8
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 3,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 5,
-        "image": "/images/pic5.jpg",
-        "productName": "SSD 1TB",
-        "category": "Storage",
-        "price": 149.99,
-        "status": "In Stock",
-        "rating": 4.6
+      "averageRating": 4.2,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Easy to install and works flawlessly."
+        },
+        {
+          "user": "User2",
+          "rating": 4,
+          "comment": "Decent motherboard, but lacks some features."
+        },
+        {
+          "user": "User3",
+          "rating": 5,
+          "comment": "Great performance and stability."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Good value for the price."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Impressive build quality and design."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "/images/pic3.jpg",
+      "productName": "RAM Module 8GB",
+      "category": "RAM",
+      "price": 79.99,
+      "status": "Out of Stock",
+      "rating": 4.0,
+      "description": "High-performance 8GB RAM module for smooth multitasking.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "RAM-456",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Speed": "DDR4-3200",
+        "Type": "Desktop Memory",
+        "CASLatency": "CL16",
+        "Voltage": "1.35V"
       },
-      {
-        "id": 6,
-        "image": "/images/pic6.jpg",
-        "productName": "Monitor 27-inch",
-        "category": "Monitor",
-        "price": 249.99,
-        "status": "In Stock",
-        "rating": 4.4
+      "individualRating": {
+        "User1": 3,
+        "User2": 4,
+        "User3": 4,
+        "User4": 3,
+        "User5": 5
       },
-      {
-        "id": 7,
-        "image": "/images/pic7.jpg",
-        "productName": "Graphics Card XYZ",
-        "category": "Others",
-        "price": 299.99,
-        "status": "In Stock",
-        "rating": 4.7
+      "averageRating": 3.8,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 3,
+          "comment": "Not as fast as I expected."
+        },
+        {
+          "user": "User2",
+          "rating": 4,
+          "comment": "Reliable and affordable."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Good for multitasking, but not for heavy gaming."
+        },
+        {
+          "user": "User4",
+          "rating": 3,
+          "comment": "Decent performance but needs better compatibility."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Excellent memory module, no complaints."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "/images/pic4.jpg",
+      "productName": "Power Supply 750W",
+      "category": "Power",
+      "price": 109.99,
+      "status": "In Stock",
+      "rating": 4.8,
+      "description": "High-performance 750W power supply for gaming PCs.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "PSU-750",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Efficiency": "80 Plus Gold",
+        "Modularity": "Semi-Modular",
+        "FanSize": "120mm",
+        "Connectors": "ATX, PCIe, SATA, CPU"
       },
-      {
-        "id": 8,
-        "image": "/images/pic8.jpg",
-        "productName": "Gaming Mouse XYZ",
-        "category": "Others",
-        "price": 49.99,
-        "status": "In Stock",
-        "rating": 4.3
+      "individualRating": {
+        "User1": 5,
+        "User2": 5,
+        "User3": 4,
+        "User4": 5,
+        "User5": 5
       },
-      {
-        "id": 9,
-        "image": "/images/pic9.jpg",
-        "productName": "Mechanical Keyboard ABC",
-        "category": "Others",
-        "price": 79.99,
-        "status": "Out of Stock",
-        "rating": 4.1
+      "averageRating": 4.8,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 5,
+          "comment": "Excellent power supply, runs cool and stable."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Great build quality and cable management."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Good, but could be quieter under load."
+        },
+        {
+          "user": "User4",
+          "rating": 5,
+          "comment": "Powerful and reliable PSU for high-end systems."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Satisfied with its performance and stability."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "/images/pic5.jpg",
+      "productName": "SSD 1TB",
+      "category": "Storage",
+      "price": 149.99,
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "High-speed 1TB SSD for faster data access and storage.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "SSD-1TB",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Interface": "NVMe PCIe Gen3 x4",
+        "FormFactor": "M.2 2280",
+        "ReadSpeed": "3500 MB/s",
+        "WriteSpeed": "2500 MB/s"
       },
-      {
-        "id": 10,
-        "image": "/images/pic10.jpg",
-        "productName": "Gaming Headphones XYZ",
-        "category": "Others",
-        "price": 69.99,
-        "status": "In Stock",
-        "rating": 4.0
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 11,
-        "image": "/images/pic11.jpg",
-        "productName": "Laptop XYZ",
-        "category": "Others",
-        "price": 799.99,
-        "status": "In Stock",
-        "rating": 4.9
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Fast and reliable storage solution."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Blazing fast read and write speeds."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Great SSD, but a bit pricey."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Works well with large files and multitasking."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Excellent choice for a high-performance PC."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "/images/pic6.jpg",
+      "productName": "Monitor 27-inch",
+      "category": "Monitor",
+      "price": 249.99,
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Immersive 27-inch monitor with high-resolution display.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Monitor-27",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "DisplaySize": "27 inches",
+        "Resolution": "2560x1440",
+        "PanelType": "IPS",
+        "RefreshRate": "75Hz",
+        "ResponseTime": "5ms"
       },
-      {
-        "id": 12,
-        "image": "/images/pic12.jpg",
-        "productName": "External HDD 2TB",
-        "category": "Storage",
-        "price": 89.99,
-        "status": "In Stock",
-        "rating": 4.2
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 13,
-        "image": "/images/pic13.jpg",
-        "productName": "Color Laser Printer ABC",
-        "category": "Others",
-        "price": 299.99,
-        "status": "In Stock",
-        "rating": 4.6
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Clear and vibrant display, good for productivity."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Love the colors and viewing angles."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Good monitor for gaming and multimedia."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Solid build quality and sleek design."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best value for a 27-inch monitor."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "/images/pic7.jpg",
+      "productName": "Graphics Card XYZ",
+      "category": "Others",
+      "price": 299.99,
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "High-performance graphics card for smooth gaming and rendering.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "GPU-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "GPUArchitecture": "NVIDIA Ampere",
+        "VRAM": "8GB GDDR6",
+        "CUDACores": "3584",
+        "ClockSpeed": "1725 MHz",
+        "Ports": "HDMI, DisplayPort"
       },
-      {
-        "id": 14,
-        "image": "/images/pic14.jpg",
-        "productName": "CPU Cooler XYZ",
-        "category": "CPU",
-        "price": 79.99,
-        "status": "In Stock",
-        "rating": 4.4
+      "individualRating": {
+        "User1": 5,
+        "User2": 5,
+        "User3": 4,
+        "User4": 5,
+        "User5": 5
       },
-      {
-        "id": 15,
-        "image": "/images/pic15.jpg",
-        "productName": "Full HD Webcam",
-        "category": "Others",
-        "price": 59.99,
-        "status": "In Stock",
-        "rating": 4.7
+      "averageRating": 4.8,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 5,
+          "comment": "Unbeatable performance, runs everything smoothly."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Handles the latest games at max settings with ease."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Powerful GPU, but a bit expensive."
+        },
+        {
+          "user": "User4",
+          "rating": 5,
+          "comment": "Great for 4K gaming and video editing."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "No regrets, best GPU I've ever owned."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "/images/pic8.jpg",
+      "productName": "Gaming Mouse XYZ",
+      "category": "Monitor",
+      "price": 49.99,
+      "status": "Out of Stock",
+      "rating": 4.3,
+      "description": "High-precision gaming mouse with customizable buttons.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Mouse-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "DPI": "16000 DPI",
+        "SensorType": "Optical",
+        "Buttons": "7 programmable buttons",
+        "Polling Rate": "1000Hz",
+        "RGBLighting": "Customizable"
       },
-      {
-        "id": 16,
-        "image": "/images/pic16.jpg",
-        "productName": "Keyboard and Mouse Set",
-        "category": "Others",
-        "price": 39.99,
-        "status": "In Stock",
-        "rating": 4.0
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 17,
-        "image": "/images/pic17.jpg",
-        "productName": "Tablet XYZ",
-        "category": "Others",
-        "price": 149.99,
-        "status": "Out of Stock",
-        "rating": 3.9
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Comfortable grip, good for long gaming sessions."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Fast and accurate tracking, love the RGB lighting."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Responsive buttons and smooth scroll wheel."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Great mouse, but the software could be improved."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best gaming mouse for the price."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "/images/pic9.jpg",
+      "productName": "Mechanical Keyboard ABC",
+      "category": "Others",
+      "price": 79.99,
+      "status": "Out of Stock",
+      "rating": 4.1,
+      "description": "Premium mechanical keyboard for enhanced typing and gaming.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Keyboard-ABC",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "SwitchType": "Cherry MX Brown",
+        "Backlight": "RGB",
+        "KeyRollover": "Full N-Key Rollover",
+        "MediaKeys": "Dedicated media controls",
+        "Connectivity": "USB Type-C"
       },
-      {
-        "id": 18,
-        "image": "/images/pic18.jpg",
-        "productName": "CPU Processor ABC",
-        "category": "CPU",
-        "price": 179.99,
-        "status": "In Stock",
-        "rating": 4.2
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 19,
-        "image": "/images/pic19.jpg",
-        "productName": "Wireless Mouse ABC",
-        "category": "Others",
-        "price": 29.99,
-        "status": "In Stock",
-        "rating": 4.1
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Excellent typing experience, love the tactile feedback."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Great build quality and customizable RGB lighting."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Mechanical switches are responsive and quiet."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Solid keyboard, but the software could be more user-friendly."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Worth the investment, a joy to use."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "image": "/images/pic10.jpg",
+      "productName": "Gaming Headphones XYZ",
+      "category": "Others",
+      "price": 69.99,
+      "status": "In Stock",
+      "rating": 4.0,
+      "description": "Immersive gaming headphones with surround sound.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Headphones-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "DriverSize": "50mm",
+        "Impedance": "32 Ohms",
+        "FrequencyResponse": "20Hz - 20kHz",
+        "Microphone": "Detachable noise-canceling mic",
+        "Connector": "3.5mm audio jack, USB for lighting"
       },
-      {
-        "id": 20,
-        "image": "/images/pic20.jpg",
-        "productName": "Monitor 24-inch",
-        "category": "Monitor",
-        "price": 199.99,
-        "status": "In Stock",
-        "rating": 4.5
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 21,
-        "image": "/images/pic21.jpg",
-        "productName": "Graphics Card ABC",
-        "category": "Others",
-        "price": 249.99,
-        "status": "Out of Stock",
-        "rating": 3.8
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Comfortable to wear, audio quality is good."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Surround sound enhances gaming experience."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Microphone works well and is adjustable."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Stylish design and durable build."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Value for money, no complaints."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "image": "/images/pic11.jpg",
+      "productName": "Laptop XYZ",
+      "category": "CPU",
+      "price": 799.99,
+      "status": "Out of Stock",
+      "rating": 4.9,
+      "description": "Powerful and portable laptop for work and entertainment.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Laptop-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Processor": "Intel Core i7",
+        "RAM": "16GB DDR4",
+        "Storage": "512GB SSD",
+        "DisplaySize": "15.6 inches",
+        "Graphics": "NVIDIA GeForce GTX 1650",
+        "BatteryLife": "Up to 10 hours"
       },
-      {
-        "id": 22,
-        "image": "/images/pic22.jpg",
-        "productName": "Wireless Headphones XYZ",
-        "category": "RAM",
-        "price": 129.99,
-        "status": "In Stock",
-        "rating": 4.3
+      "individualRating": {
+        "User1": 5,
+        "User2": 5,
+        "User3": 5,
+        "User4": 5,
+        "User5": 5
       },
-      {
-        "id": 23,
-        "image": "/images/pic23.jpg",
-        "productName": "Gaming Keyboard XYZ",
-        "category": "RAM",
-        "price": 89.99,
-        "status": "In Stock",
-        "rating": 4.8
+      "averageRating": 5.0,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 5,
+          "comment": "Excellent performance and build quality."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Handles multitasking and gaming with ease."
+        },
+        {
+          "user": "User3",
+          "rating": 5,
+          "comment": "Bright and vibrant display, great for entertainment."
+        },
+        {
+          "user": "User4",
+          "rating": 5,
+          "comment": "Portable and lightweight, perfect for on-the-go use."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best laptop I've ever owned, highly recommended."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "image": "/images/pic12.jpg",
+      "productName": "External HDD 2TB",
+      "category": "Storage",
+      "price": 89.99,
+      "status": "Out of Stock",
+      "rating": 4.2,
+      "description": "Portable 2TB external hard drive for extra storage.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "HDD-2TB",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Interface": "USB 3.0",
+        "FormFactor": "2.5 inches",
+        "DataTransferRate": "Up to 5 Gbps",
+        "Compatibility": "Windows, Mac, Linux"
       },
-      {
-        "id": 24,
-        "image": "/images/pic24.jpg",
-        "productName": "Tablet ABC",
-        "category": "Others",
-        "price": 169.99,
-        "status": "In Stock",
-        "rating": 4.1
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 3,
+        "User5": 5
       },
-      {
-        "id": 25,
-        "image": "/images/pic25.jpg",
-        "productName": "HD Webcam",
-        "category": "Power",
-        "price": 49.99,
-        "status": "Out of Stock",
-        "rating": 3.9
+      "averageRating": 4.2,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Decent storage solution, works as expected."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Fast data transfer and reliable performance."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Portable and easy to use, no complaints."
+        },
+        {
+          "user": "User4",
+          "rating": 3,
+          "comment": "Works fine, but a bit bulky for my liking."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Perfect for backups and storing large files."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "image": "/images/pic13.jpg",
+      "productName": "Color Laser Printer ABC",
+      "category": "Motherboard",
+      "price": 299.99,
+      "status": "Out of Stock",
+      "rating": 4.6,
+      "description": "High-quality color laser printer for home and office use.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Printer-ABC",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "PrintingTechnology": "Color Laser",
+        "PrintSpeed": "30 ppm (pages per minute)",
+        "DuplexPrinting": "Automatic",
+        "Connectivity": "USB, Ethernet, Wireless"
       },
-      {
-        "id": 26,
-        "image": "/images/pic26.jpg",
-        "productName": "Inkjet Printer ABC",
-        "category": "Power",
-        "price": 79.99,
-        "status": "In Stock",
-        "rating": 4.2
+      "individualRating": {
+        "User1": 5,
+        "User2": 4,
+        "User3": 5,
+        "User4": 5,
+        "User5": 5
       },
-      {
-        "id": 27,
-        "image": "/images/pic27.jpg",
-        "productName": "SSD 500GB",
-        "category": "Storage",
-        "price": 99.99,
-        "status": "In Stock",
-        "rating": 4.6
+      "averageRating": 4.8,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 5,
+          "comment": "Fast and high-quality color prints."
+        },
+        {
+          "user": "User2",
+          "rating": 4,
+          "comment": "Reliable printer, but a bit noisy."
+        },
+        {
+          "user": "User3",
+          "rating": 5,
+          "comment": "Easy setup and wireless printing."
+        },
+        {
+          "user": "User4",
+          "rating": 5,
+          "comment": "Great for office use, saves on printing costs."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Very pleased with the print quality."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "image": "/images/pic14.jpg",
+      "productName": "CPU Cooler XYZ",
+      "category": "CPU",
+      "price": 79.99,
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Efficient CPU cooler for optimal thermal performance.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Cooler-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Compatibility": "Intel LGA1200, AMD AM4",
+        "HeatPipes": "4 copper heat pipes",
+        "FanSpeed": "800 - 1600 RPM",
+        "NoiseLevel": "22 dBA"
       },
-      {
-        "id": 28,
-        "image": "/images/pic28.jpg",
-        "productName": "Wireless Keyboard and Mouse Set",
-        "category": "Motherboard",
-        "price": 59.99,
-        "status": "In Stock",
-        "rating": 4.0
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
       },
-      {
-        "id": 29,
-        "image": "/images/pic29.jpg",
-        "productName": "Gaming Mouse ABC",
-        "category": "Motherboard",
-        "price": 59.99,
-        "status": "Out of Stock",
-        "rating": 4.3
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Keeps the CPU cool even under heavy load."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Quiet and efficient cooling solution."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Good value for the price."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Installation was a bit tricky, but works well."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Excellent CPU cooler, highly recommended."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "image": "/images/pic15.jpg",
+      "productName": "Full HD Webcam",
+      "category": "Motherboard",
+      "price": 59.99,
+      "status": "In Stock",
+      "rating": 4.3,
+      "description": "High-resolution webcam for video conferencing and streaming.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Webcam-FHD",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Resolution": "Full HD 1080p",
+        "FrameRate": "30fps",
+        "FieldofView": "80 degrees",
+        "Connectivity": "USB",
+        "Built-inMic": "Stereo microphone"
       },
-      {
-        "id": 30,
-        "image": "/images/pic30.jpg",
-        "productName": "Wireless Router XYZ",
-        "category": "Monitor",
-        "price": 79.99,
-        "status": "In Stock",
-        "rating": 4.7
-      }
-    ]
-  }
-  
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Clear and smooth video quality."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Great webcam for online meetings."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Works well, but the microphone could be better."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Easy to set up and use."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best webcam for the price, very satisfied."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "image": "/images/pic16.jpg",
+      "productName": "Smartphone ABC",
+      "category": "RAM",
+      "price": 599.99,
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Feature-packed smartphone for productivity and entertainment.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Phone-ABC",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "DisplaySize": "6.5 inches",
+        "Resolution": "2400x1080",
+        "Processor": "Octa-core",
+        "RAM": "8GB",
+        "Storage": "128GB",
+        "Camera": "Triple-lens camera system",
+        "BatteryCapacity": "4500 mAh"
+      },
+      "individualRating": {
+        "User1": 5,
+        "User2": 5,
+        "User3": 4,
+        "User4": 5,
+        "User5": 5
+      },
+      "averageRating": 4.8,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 5,
+          "comment": "Impressive camera and display quality."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Smooth performance and great battery life."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Good smartphone, but a bit pricey."
+        },
+        {
+          "user": "User4",
+          "rating": 5,
+          "comment": "Feature-packed and user-friendly."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best smartphone I've ever had, totally worth it."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "image": "/images/pic17.jpg",
+      "productName": "Wireless Earbuds XYZ",
+      "category": "RAM",
+      "price": 99.99,
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Wireless earbuds with high-fidelity sound and long battery life.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Earbuds-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "DriverSize": "10mm",
+        "BluetoothVersion": "5.0",
+        "BatteryLife": "Up to 8 hours (earbuds) + 24 hours (charging case)",
+        "NoiseCancellation": "Active noise-cancellation"
+      },
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Good sound quality, comfortable fit."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Excellent battery life, lasts all day."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Noise cancellation works well."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Pairing was easy, happy with my purchase."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best wireless earbuds, worth every penny."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "image": "/images/pic18.jpg",
+      "productName": "Smart Watch ABC",
+      "category": "Power",
+      "price": 199.99,
+      "status": "Out of Stock",
+      "rating": 4.2,
+      "description": "Feature-rich smartwatch for health and fitness tracking.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Watch-ABC",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "DisplaySize": "1.3 inches",
+        "Resolution": "360x360",
+        "Sensors": "Heart rate, SpO2, GPS",
+        "BatteryLife": "Up to 7 days",
+        "WaterResistance": "5 ATM"
+      },
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 3,
+        "User5": 5
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Accurate health tracking and long battery life."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Easy to use and comfortable to wear."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Great smartwatch, but needs more app support."
+        },
+        {
+          "user": "User4",
+          "rating": 3,
+          "comment": "Decent fitness tracking, but GPS can be inaccurate."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Love this smartwatch, it's my fitness companion."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "image": "/images/pic19.jpg",
+      "productName": "Bluetooth Speaker XYZ",
+      "category": "Power",
+      "price": 79.99,
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Portable Bluetooth speaker with powerful sound.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Speaker-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "SpeakerOutput": "20W",
+        "BluetoothRange": "Up to 50 feet",
+        "BatteryLife": "Up to 12 hours",
+        "WaterResistance": "IPX5"
+      },
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Good sound quality and decent bass."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Clear and loud sound, perfect for outdoor use."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Portable and easy to connect via Bluetooth."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Sturdy build, but could have more color options."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best Bluetooth speaker, highly recommended."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "image": "/images/pic20.jpg",
+      "productName": "Smart Thermostat XYZ",
+      "category": "Storage",
+      "price": 149.99,
+      "status": "Out of Stock",
+      "rating": 4.3,
+      "description": "Smart thermostat for energy-efficient home temperature control.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "Thermostat-XYZ",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Compatibility": "Compatible with most HVAC systems",
+        "Connectivity": "Wi-Fi, Bluetooth",
+        "SmartFeatures": "Learning mode, remote control via app"
+      },
+      "individualRating": {
+        "User1": 4,
+        "User2": 5,
+        "User3": 4,
+        "User4": 4,
+        "User5": 5
+      },
+      "averageRating": 4.4,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 4,
+          "comment": "Saves energy and easy to program."
+        },
+        {
+          "user": "User2",
+          "rating": 5,
+          "comment": "Convenient remote control through the app."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Installation was a bit tricky, but worth it."
+        },
+        {
+          "user": "User4",
+          "rating": 4,
+          "comment": "Smart features are useful, but could have more options."
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Best smart thermostat on the market, very happy with it."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "image": "/images/pic30.jpg",
+      "productName": "Wireless Router XYZ",
+      "category": "Monitor",
+      "price": 79.99,
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "High-speed wireless router for smooth internet connectivity.",
+      "keyFeatures": {
+        "Brand": "Example Brand",
+        "Model": "XYZ-789",
+        "Specification": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Port": "Ethernet, USB 2.0, Wi-Fi",
+        "Type": "Electronics",
+        "WirelessStandard": "802.11ac",
+        "Frequency": "Dual-band 2.4GHz and 5GHz"
+      },
+      "individualRating": {
+        "User1": 5,
+        "User2": 4,
+        "User3": 4,
+        "User4": 5,
+        "User5": 5
+      },
+      "averageRating": 4.6,
+      "reviews": [
+        {
+          "user": "User1",
+          "rating": 5,
+          "comment": "Amazing range and signal strength!"
+        },
+        {
+          "user": "User2",
+          "rating": 4,
+          "comment": "Fast and reliable performance."
+        },
+        {
+          "user": "User3",
+          "rating": 4,
+          "comment": "Easy setup and good security features."
+        },
+        {
+          "user": "User4",
+          "rating": 5,
+          "comment": "Best router I've ever used!"
+        },
+        {
+          "user": "User5",
+          "rating": 5,
+          "comment": "Great value for the price."
+        }
+      ]
+    }
+  ]
+}

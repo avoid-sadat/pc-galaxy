@@ -1,8 +1,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
-import { Col, Row } from "antd";
+import { Col, Rate, Row } from "antd";
 import Image from "next/image";
 import {
-  ArrowRightOutlined,
   CalendarOutlined,
   CommentOutlined,
   ProfileOutlined,
@@ -21,6 +20,19 @@ const prodcutDetails = ({ details }) => {
               height={300}
               responsive // Use layout prop instead of "responsive"
             />
+          </div>
+          <div>
+            <p style={{ fontSize: "20px" }}>Reviews:</p>
+              {details?.reviews.map((review) => (
+                <ul key={review.id}>
+                  <li>User: {review.user}</li>
+                  <li>Comment: {review.comment}</li>
+                </ul>
+              ))}
+            </div>
+            <div>
+          <p style={{ fontSize: "20px" }}>Rating:</p>
+            <Rate allowClear={true} defaultValue={details?.rating} />
           </div>
         </Col>
         <Col className="gutter-row" span={12}>
@@ -47,15 +59,15 @@ const prodcutDetails = ({ details }) => {
             >
               <span>
                 <CalendarOutlined />
-                {details?.category}
+                Category {details?.category}
               </span>
               <span>
                 <CommentOutlined />
-                {details?.price} PRICE
+                PRICE {details?.price}
               </span>
               <span>
                 <ProfileOutlined />
-                {details?.status}
+                Status {details?.status}
               </span>
             </p>
             <p
@@ -63,8 +75,37 @@ const prodcutDetails = ({ details }) => {
                 fontSize: "20px",
               }}
             >
-              {details?.rating}
+              Description:{details?.description}
             </p>
+            <div>
+              <p style={{ fontSize: "20px" }}>Key Features:</p>
+              <ul>
+                {Object.entries(details.keyFeatures).map(([key, value]) => (
+                  <li key={key}>
+                    {key}: {value}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p style={{ fontSize: "20px" }}>individual Rating:</p>
+              <ul>
+                {Object.entries(details.individualRating).map(
+                  ([key, value]) => (
+                    <li key={key}>
+                      {key}:
+                      <Rate key={key} allowClear={true} defaultValue={value} />
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+            <div>
+            <p style={{ fontSize: "20px" }}>Average Rating:</p>
+              <Rate allowClear={true} defaultValue={details?.averageRating} />
+            </div>
+            
+       
           </div>
         </Col>
       </Row>
@@ -91,7 +132,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async function getStaticProps(context) {
   const { params } = context;
   const res = await fetch(`http://localhost:5000/products/${params.productid}`);
-  const data =await res.json();
+  const data = await res.json();
   console.log(data);
   return {
     props: {

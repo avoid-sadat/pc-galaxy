@@ -5,7 +5,7 @@ import {
     CommentOutlined,
     ProfileOutlined,
   } from "@ant-design/icons";
-  import { Card, Row, Col } from "antd";
+  import { Card, Row, Col, Rate } from "antd";
   import Image from "next/image";
   import Link from "next/link";
 
@@ -37,65 +37,55 @@ const others = ({allProduct}) => {
         >
           {filteredProducts.map((products) => (
             <Col
-              key={products.id}
-              className="gutter-row"
-              xs={24}
-              sm={12}
-              md={8}
-              lg={6}
+            key={products.id}
+            className="gutter-row"
+            xs={24}
+            sm={12}
+            md={8}
+            lg={6}
+          >
+            <Card
+              hoverable
+              cover={
+                <Image
+                  src={products?.image}
+                  alt={products?.productName}
+                  width={500}
+                  height={200}
+                  responsive
+                />
+              }
             >
-  
-              <Card
-                hoverable
-                cover={
-                  <Image
-                    src={products?.image}
-                    alt={products?.productName} // Add alt attribute for accessibility
-                    width={500}
-                    height={200}
-                    responsive // Use layout prop instead of "responsive"
+              <Card.Meta title={products?.productName} />
+              <div>
+                <span>
+                  <CalendarOutlined />
+                  Price: {products?.price}
+                </span>
+              </div>
+              <div>
+                <span>
+                  <CommentOutlined />
+                  Status: {products?.status}
+                </span>
+              </div>
+              <div>
+                <span>
+                  <CalendarOutlined />
+                  Category: {products?.category}
+                </span>
+              </div>
+              <div>
+                <span>
+                  <Rate
+                    allowClear={false}
+                    defaultValue={products?.rating}
+                    style={{ color: "orange" }}
                   />
-                }
-              >
-                <Meta title={products?.productName} />
-                <div
-                  className="line"
-                  style={{
-                    height: "5px",
-                    margin: "20px 0",
-                    background: "#000",
-                    width: "100%",
-                  }}
-                ></div>
-  
+                </span>
+              </div>
+              <Link href={`/products/${products?.id}`}>
                 <p
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    width: "100%",
-                    margin: "10px 0px",
-                    fontSize: "12px",
-                  }}
-                >
-                  <span>
-                    <CalendarOutlined />
-                    {products?.price} Price
-                  </span>
-                  <span>
-                    <CalendarOutlined />
-                    {products?.category} Category
-                  </span>
-                  <span>
-                    <CommentOutlined />
-                    {products?.status} Status
-                  </span>
-                  <span>
-                    <ProfileOutlined />
-                    {products?.rating} Rating
-                  </span>
-                </p>
-          <Link href={`/products/${products?.id}`}>
-          <p
                   style={{
                     textAlign: "center",
                     fontSize: "15px",
@@ -107,9 +97,9 @@ const others = ({allProduct}) => {
                 >
                   Product Details <ArrowRightOutlined />
                 </p>
-          </Link>
-              </Card>
-            </Col>
+              </Link>
+            </Card>
+          </Col>
           ))}
         </Row>
       </>

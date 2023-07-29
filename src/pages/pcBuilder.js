@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 
-// import RootLayout from "@/components/Layouts/RootLayout";
 // import Head from "next/head";
 // import { Button, Card, List } from "antd";
 // import Link from "next/link";
@@ -189,21 +188,24 @@ const buildPc = ({ allCategory }) => {
         Complete Build
       </button>
 
-      <List
-        dataSource={sixCategories}
-        renderItem={(category) => (
-          <List.Item>
-            <Card>
-              <div>{category.category}</div>
-
-              <Button>
-                {/* Dynamic Link based on category name */}
-                <Link href={`/categories/${category.category}`}>ADD</Link>
-              </Button>
-            </Card>
-          </List.Item>
-        )}
-      />
+      <div>
+        <List
+          dataSource={sixCategories}
+          renderItem={(category) => (
+            <List.Item>
+              <Card style={{ marginLeft: "100px" }}>
+                <div>
+                  {category.category}{" "}
+                  <Button style={{ marginLeft: "50px" }} type="primary">
+                    {/* Dynamic Link based on category name */}
+                    <Link href={`/categories/${category.category}`}>ADD</Link>
+                  </Button>
+                </div>
+              </Card>
+            </List.Item>
+          )}
+        />
+      </div>
     </>
   );
 };

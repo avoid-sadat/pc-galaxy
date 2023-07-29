@@ -1,0 +1,294 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "image": "/images/pic1.jpg",
+        "productName": "CPU Processor XYZ",
+        "category": "CPU",
+        "price": 199.99,
+        "status": "In Stock",
+        "rating": 4.5,
+        "Description": "This is an amazing electronic device with advanced features."
+
+      },
+      {
+        "id": 2,
+        "image": "/images/pic2.jpg",
+        "productName": "Motherboard ABC",
+        "category": "Motherboard",
+        "price": 149.99,
+        "status": "In Stock",
+        "rating": 4.2
+      },
+      {
+        "id": 3,
+        "image": "/images/pic3.jpg",
+        "productName": "RAM Module 8GB",
+        "category": "RAM",
+        "price": 79.99,
+        "status": "Out of Stock",
+        "rating": 4.0
+      },
+      {
+        "id": 4,
+        "image": "/images/pic4.jpg",
+        "productName": "Power Supply 750W",
+        "category": "Power",
+        "price": 109.99,
+        "status": "In Stock",
+        "rating": 4.8
+      },
+      {
+        "id": 5,
+        "image": "/images/pic5.jpg",
+        "productName": "SSD 1TB",
+        "category": "Storage",
+        "price": 149.99,
+        "status": "In Stock",
+        "rating": 4.6
+      },
+      {
+        "id": 6,
+        "image": "/images/pic6.jpg",
+        "productName": "Monitor 27-inch",
+        "category": "Monitor",
+        "price": 249.99,
+        "status": "In Stock",
+        "rating": 4.4
+      },
+      {
+        "id": 7,
+        "image": "/images/pic7.jpg",
+        "productName": "Graphics Card XYZ",
+        "category": "Others",
+        "price": 299.99,
+        "status": "In Stock",
+        "rating": 4.7
+      },
+      {
+        "id": 8,
+        "image": "/images/pic8.jpg",
+        "productName": "Gaming Mouse XYZ",
+        "category": "Others",
+        "price": 49.99,
+        "status": "In Stock",
+        "rating": 4.3
+      },
+      {
+        "id": 9,
+        "image": "/images/pic9.jpg",
+        "productName": "Mechanical Keyboard ABC",
+        "category": "Others",
+        "price": 79.99,
+        "status": "Out of Stock",
+        "rating": 4.1
+      },
+      {
+        "id": 10,
+        "image": "/images/pic10.jpg",
+        "productName": "Gaming Headphones XYZ",
+        "category": "Others",
+        "price": 69.99,
+        "status": "In Stock",
+        "rating": 4.0
+      },
+      {
+        "id": 11,
+        "image": "/images/pic11.jpg",
+        "productName": "Laptop XYZ",
+        "category": "Others",
+        "price": 799.99,
+        "status": "In Stock",
+        "rating": 4.9
+      },
+      {
+        "id": 12,
+        "image": "/images/pic12.jpg",
+        "productName": "External HDD 2TB",
+        "category": "Storage",
+        "price": 89.99,
+        "status": "In Stock",
+        "rating": 4.2
+      },
+      {
+        "id": 13,
+        "image": "/images/pic13.jpg",
+        "productName": "Color Laser Printer ABC",
+        "category": "Others",
+        "price": 299.99,
+        "status": "In Stock",
+        "rating": 4.6
+      },
+      {
+        "id": 14,
+        "image": "/images/pic14.jpg",
+        "productName": "CPU Cooler XYZ",
+        "category": "CPU",
+        "price": 79.99,
+        "status": "In Stock",
+        "rating": 4.4
+      },
+      {
+        "id": 15,
+        "image": "/images/pic15.jpg",
+        "productName": "Full HD Webcam",
+        "category": "Others",
+        "price": 59.99,
+        "status": "In Stock",
+        "rating": 4.7
+      },
+      {
+        "id": 16,
+        "image": "/images/pic16.jpg",
+        "productName": "Keyboard and Mouse Set",
+        "category": "Others",
+        "price": 39.99,
+        "status": "In Stock",
+        "rating": 4.0
+      },
+      {
+        "id": 17,
+        "image": "/images/pic17.jpg",
+        "productName": "Tablet XYZ",
+        "category": "Others",
+        "price": 149.99,
+        "status": "Out of Stock",
+        "rating": 3.9
+      },
+      {
+        "id": 18,
+        "image": "/images/pic18.jpg",
+        "productName": "CPU Processor ABC",
+        "category": "CPU",
+        "price": 179.99,
+        "status": "In Stock",
+        "rating": 4.2
+      },
+      {
+        "id": 19,
+        "image": "/images/pic19.jpg",
+        "productName": "Wireless Mouse ABC",
+        "category": "Others",
+        "price": 29.99,
+        "status": "In Stock",
+        "rating": 4.1
+      },
+      {
+        "id": 20,
+        "image": "/images/pic20.jpg",
+        "productName": "Monitor 24-inch",
+        "category": "Monitor",
+        "price": 199.99,
+        "status": "In Stock",
+        "rating": 4.5
+      },
+      {
+        "id": 21,
+        "image": "/images/pic21.jpg",
+        "productName": "Graphics Card ABC",
+        "category": "Others",
+        "price": 249.99,
+        "status": "Out of Stock",
+        "rating": 3.8
+      },
+      {
+        "id": 22,
+        "image": "/images/pic22.jpg",
+        "productName": "Wireless Headphones XYZ",
+        "category": "RAM",
+        "price": 129.99,
+        "status": "In Stock",
+        "rating": 4.3
+      },
+      {
+        "id": 23,
+        "image": "/images/pic23.jpg",
+        "productName": "Gaming Keyboard XYZ",
+        "category": "RAM",
+        "price": 89.99,
+        "status": "In Stock",
+        "rating": 4.8
+      },
+      {
+        "id": 24,
+        "image": "/images/pic24.jpg",
+        "productName": "Tablet ABC",
+        "category": "Others",
+        "price": 169.99,
+        "status": "In Stock",
+        "rating": 4.1
+      },
+      {
+        "id": 25,
+        "image": "/images/pic25.jpg",
+        "productName": "HD Webcam",
+        "category": "Power",
+        "price": 49.99,
+        "status": "Out of Stock",
+        "rating": 3.9
+      },
+      {
+        "id": 26,
+        "image": "/images/pic26.jpg",
+        "productName": "Inkjet Printer ABC",
+        "category": "Power",
+        "price": 79.99,
+        "status": "In Stock",
+        "rating": 4.2
+      },
+      {
+        "id": 27,
+        "image": "/images/pic27.jpg",
+        "productName": "SSD 500GB",
+        "category": "Storage",
+        "price": 99.99,
+        "status": "In Stock",
+        "rating": 4.6
+      },
+      {
+        "id": 28,
+        "image": "/images/pic28.jpg",
+        "productName": "Wireless Keyboard and Mouse Set",
+        "category": "Motherboard",
+        "price": 59.99,
+        "status": "In Stock",
+        "rating": 4.0
+      },
+      {
+        "id": 29,
+        "image": "/images/pic29.jpg",
+        "productName": "Gaming Mouse ABC",
+        "category": "Motherboard",
+        "price": 59.99,
+        "status": "Out of Stock",
+        "rating": 4.3
+      },
+      {
+        "id": 30,
+        "image": "/images/pic30.jpg",
+        "productName": "Wireless Router XYZ",
+        "category": "Monitor",
+        "price": 79.99,
+        "status": "In Stock",
+        "rating": 4.7
+      }
+    ]
+  }
+  
+
+<p style={{ fontSize: "20px" }}>Key Features:</p>
+              {details?.keyFeatures && (
+                <ul>
+                  <li>Brand: {details.keyFeatures.Brand}</li>
+                  <li>Model: {details.keyFeatures.Model}</li>
+                  <li>Specification: {details.keyFeatures.Specification}</li>
+                  <li>Compatibility: {details.keyFeatures.Compatibility}</li>
+                  <li>Connectivity: {details.keyFeatures.Connectivity}</li>
+                  <li>Smart Features: {details.keyFeatures.SmartFeatures}</li>
+                  <li>SpeakerOutput: {details.keyFeatures.SpeakerOutput}</li>
+                  <li>BluetoothRange: {details.keyFeatures.BluetoothRange}</li>
+                  <li>BatteryLife: {details.keyFeatures.BatteryLife}</li>
+                  <li>WaterResistance: {details.keyFeatures.WaterResistance}</li>
+                  {/* Add other key features here */}
+                </ul>
+              )}
