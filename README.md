@@ -7,3 +7,5 @@ Visit website:
         see the latest Pc
 You can register here
 
+        Only social-login: GitHUb
+
